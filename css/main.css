@@ -1,0 +1,270 @@
+/*
+
+Crave blue: #1B75BB
+Crave green: #8DAA3D
+Yellow: #EEAB0B
+Grey: #DDD
+
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Site head */
+
+.site-head__logo-bar {
+  background: #1B75BB url('../images/pattern-blue.svg') ;
+  padding: 2em;
+  position: relative;
+}
+
+.site-head__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.site-head h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  background: #1B75BB;
+  padding: .5em;
+}
+
+.site-head h1 br {
+  display: none;
+}
+
+.site-head__headline-bar {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.site-head__hero {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+
+  .site-head h1 br {
+    display: inline;
+  }
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+  .site-head__logo-bar {
+    height: 250px;
+  }
+
+  .site-head__headline-bar {
+    flex-direction: column-reverse;
+  }
+
+  .site-head h1 {
+    width: 15em;
+    margin: -1.5em auto 0 auto;
+    position: relative;
+    font-size: 2.13em;
+  }
+
+
+}
+
+
+/* Blurbs */
+
+.blurb {
+  padding: 2em;
+  max-width: 90em;
+  margin: 0 auto;
+  /*outline: 1px solid red;*/
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.blurb__col-right {
+  text-align: center;
+}
+
+.blurb h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.blurb p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.13em;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+
+  .blurb h1 {
+    font-size: 2.4em;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
+  .blurb {
+    flex-flow: row nowrap;
+  }
+
+  .blurb__col-left {
+    /*outline: 1px solid green;*/
+    width: 65%;
+  }
+
+  .blurb p {
+    padding-right: 2em;
+
+}
+
+  .blurb__col-right {
+    /*outline: 1px solid blue;*/
+    width: 35%;
+  }
+
+}
+
+/* Shouts */
+
+/* Shout yellow */
+
+.shout {
+  margin: 2em 0;
+}
+
+.shout--yellow {
+  background: #EEAB0B;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shout h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.slider-pattern-1 {
+  background: url('../images/pattern-yellow.svg');
+  height: 500px;
+  animation: slide 25s linear infinite;
+}
+
+.slider-pattern-2 {
+  background: url('../images/pattern-yellow.svg');
+  height: 500px;
+  animation: slide 25s linear infinite;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-500px);
+  }
+}
+
+.yellow__message-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shout--yellow h1 {
+  font-size: 5em;
+  line-height: .9em;
+  
+}
+
+@media screen and (min-width: 800px) {
+
+  .shout--yellow h1 {
+  transform: translateY(-.5em); 
+  }
+
+  .big-zero {
+    font-size: 4em;
+    position: relative;
+    top: .25em;
+  }
+    
+}
+
+/* Shout blue */
+
+.shout--blue {
+  height: 500px;
+  background: grey url('../images/snack-bowls_600.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.shout--blue h1 {
+  background: #B55D3E;
+  font-size: 2.5em;
+  padding: .6em;
+  margin: 0 auto;
+
+}
+
+@media screen and (min-width: 600px) {
+  .shout--blue {
+    background-image: url('../images/snack-bowls_1200.jpg');
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .shout--blue h1 {
+    width: 13em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
