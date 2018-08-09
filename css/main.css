@@ -16,27 +16,33 @@ img {
   max-width: 100%;
 }
 
-/* Site head */
+/* Top */
 
-.logo-wrapper {
-  padding: 3em;
+.top {
 }
 
-.site-logo {
-  display: block;
-  margin: 0 auto;
-  
-}
-
-.site-head {
-  z-index: -99999;
-}
-
-.site-head__pattern-bar {
+.top-pattern-bar {
   background: #1B75BB;
   overflow: hidden;
   height: 400px;
 }
+
+.top__logo-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+}
+
+.top-logo {
+  display: block;
+  margin: 0 auto;  
+}
+
+
+
+/* Site head */
 
 .site-head h1 {
   font-family: 'Amaranth', sans-serif;
@@ -73,8 +79,9 @@ img {
 
 @media screen and (min-width: 700px) {
 
-  .site-head__pattern-bar {
-    margin-top: -605px;
+
+  .top-pattern-bar {
+    height: 250px;
   }
 
   .site-head__headline-bar {
