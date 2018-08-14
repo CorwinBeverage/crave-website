@@ -1,5 +1,5 @@
-/*
 
+/*
 Crave blue: #1B75BB
 Crave green: #8DAA3D
 Yellow: #EEAB0B
@@ -7,8 +7,8 @@ Grey: #DDD
 
 */
 
-
 * {
+  
   box-sizing: border-box;
 }
 
@@ -571,5 +571,44 @@ img {
   .contact__social {
     width: 400px;
   }
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 8em;
+  position: relative;
+}
+
+
+.bottom-pattern-bar {
+  background: #1B75BB;
+  overflow: hidden;
+  height: 250px;
+}
+
+.site-footer__logo-wrapper {
+  position: absolute;
+  width: 100%;
+  top: -125px;
+}
+
+.site-footer__logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.site-footer__copyright {
+  font-family: 'Raleway', sans-serif;
+  font-size: .9em;
+  text-align: center;
+  font-style: normal;
+  font-variant: lining-nums;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  color: white;
+  background: #1B75BB;  
 }
 
