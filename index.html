@@ -13,23 +13,28 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Animate On Scroll https://michalsnik.github.io/aos/ -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
 </head>
 <body>
 
-
-    
   <div class="top-pattern-bar">
     <div class="pattern-blue-1"></div>
     <div class="pattern-blue-2"></div>
   </div>
 
   <div class="top__logo-wrapper">
-    <img alt="Crave logo" class="top-logo" src="images/crave-circle-logo.svg">
+    <img data-aos="zoom-in-up" alt="Crave logo" class="top-logo" src="images/crave-circle-logo.svg">
   </div>  
 
   <header class="site-head">  
-    <div class="site-head__headline-bar">
-      <h1>A Convenience Store<br /> in your Break Room.</h1>
+    <div  class="site-head__headline-bar">
+      <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic"
+         data-aos-duration="1300">A Convenience Store<br /> in your Break Room.</h1>
       <img alt="Crave micromarket with coolers" class="site-head__hero"
        srcset="images/corwin_micromarket_500.jpg 500w,
          images/corwin_micromarket_1000.jpg 1000w,
@@ -44,7 +49,7 @@
       <p>A micro-market is an unmanned retail space where individuals can purchase food and beverages. It’s a convenience store inside your break room! Think freshly prepared lunches, healthy snacks, and drinks that people can access whenever the mood strikes. They are popular additions to employee break rooms, where they can be custom-fit to the size and shape of the area and packed with enticing options to keep employees both happy and healthy.</p>
     </div>
     <div class="blurb__col-right">
-        <img alt="People in lunchroom" src="images/conversation.jpg">
+        <img div data-aos="fade-left" data-aos-duration="800" alt="People in lunchroom" src="images/conversation.jpg">
     </div>
   </article>
   
@@ -66,12 +71,12 @@
       <p>Micro-markets offer a variety of nutritious and healthy foods for our customers. Micro-markets also give employees the ability to look at nutritional content before they make a purchase. This allows them to choose what products are right for them. One of the best features of a micro-market is not only the convenience of accessible, healthy food items, but the fact that they are self-serve, and do not require any additional manpower to serve employees.</p>
     </div>
     <div class="blurb__col-right">
-        <img alt="People in lunchroom" src="images/micromarket-circle.jpg">
+        <img alt="People in lunchroom" div data-aos="fade-left" data-aos-duration="800" src="images/micromarket-circle.jpg">
     </div>
   </article>
 
   <section class="shout shout--snacks">
-    <h1>An exceptional workplace food experience.</h1>
+    <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1300">An exceptional workplace food experience.</h1>
   </section>
 
 
@@ -83,7 +88,7 @@
       <p>After micro-market patrons have made their selections, they check themselves out using a self-serve kiosk.</p>
     </div>
     <div class="blurb__col-right">
-        <img alt="People in lunchroom" src="images/sandwiches-circle.jpg">
+        <img alt="People in lunchroom" div data-aos="fade-left" data-aos-duration="800" src="images/sandwiches-circle.jpg">
     </div>
   </article>
 
@@ -126,28 +131,28 @@
   </figure>
 
   <ol class="steps">
-    <li>
+    <li div data-aos="fade-left">
       <h2>Step 1</h2>
       <p>Contact us to set an appointment.<br>
         (888) 855-4458<br>
         or use the form below</p>
     </li>
-    <li>
+    <li div data-aos="fade-left" data-aos-offset="200">
       <h2>Step 2</h2>
       <p>We will measure your location and specifications.</p>
     </li>
-    <li>
+    <li div data-aos="fade-left" data-aos-offset="400">
       <h2>Step 3</h2>
       <p>Install & Launch!</p>
     </li>
   </ol>
   
   <ul class="bullets">
-    <li class="bullet-basket">Efficient self checkout</li>
-    <li class="bullet-settings">Customized for your space</li>
-    <li class="bullet-strawberry">Healthy options</li>
-    <li class="bullet-app">Convenient ways to pay</li>
-    <li class="bullet-safe">Secure</li>
+    <li div data-aos="fade-up" class="bullet-basket">Efficient self checkout</li>
+    <li div data-aos="fade-up" class="bullet-settings">Customized for your space</li>
+    <li div data-aos="fade-up" class="bullet-strawberry">Healthy options</li>
+    <li div data-aos="fade-up" class="bullet-app">Convenient ways to pay</li>
+    <li div data-aos="fade-up" class="bullet-safe">Secure</li>
 </ul>
 
 <section class="contact">
@@ -172,7 +177,7 @@
   </div>
   
   <div class="site-footer__logo-wrapper">
-    <img alt="Crave logo" class="site-footer__logo" src="images/crave-circle-logo.svg">
+    <img data-aos="zoom-in-up"  alt="Crave logo" class="site-footer__logo" src="images/crave-circle-logo.svg">
   </div>
   
   <small class="site-footer__copyright">
@@ -183,7 +188,9 @@
 </footer>
   
 
-
+<script>
+  AOS.init();
+</script>
 
 <script src="http://localhost:35729/livereload.js"></script>
 </body>
