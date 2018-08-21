@@ -577,6 +577,16 @@ body {
   }
 }
 
+
+/* Contact form */
+
+.green-background {
+  background: #8DAA3D url('../images/pattern-yellow.svg');
+
+}
+
+
+
 /* Footer */
 
 .site-footer {
