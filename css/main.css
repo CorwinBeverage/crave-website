@@ -487,6 +487,10 @@ body {
     margin: 0;
     padding: 4em 1em;;
   }
+  
+  .form-wrapper {
+    margin-top: 5em;
+  }
 
 }
 
@@ -581,10 +585,105 @@ body {
 /* Contact form */
 
 .green-background {
-  background: #8DAA3D url('../images/pattern-yellow.svg');
-
+  background: url('../images/pattern-green.svg'),
+  linear-gradient(#A1CC2B, #8DAA3D);
 }
 
+.form-wrapper {
+  padding: 1em;
+}
+
+.form-wrapper h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+.form-wrapper p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.13em;
+  line-height: 1.5em;
+  text-align: center; 
+}
+
+.form-wrapper p br {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .form-wrapper p br {
+    display: block;
+  }
+}
+
+.signup-form {
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+.signup-form label {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: .5em;
+  display: block;
+  width: 100%;
+}
+
+.signup-form input, .signup-form textarea {
+  height: 3em;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: .5em;
+}
+
+.signup-form textarea {
+  height: 5em;
+}
+
+.field-wrapper {
+  margin-top: 1em;
+}
+
+.blue-button {
+  background: #1B75BB;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 1.5em;
+  display: block;
+  margin: 1em auto;  
+}
+
+@media screen and (min-width: 800px){
+  
+  .field-wrapper-2col {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  
+  
+  .field-wrapper__email, .field-wrapper__phone {
+    width: 48%;
+  }
+  
+  .field-wrapper__phone {
+    
+}
 
 
 /* Footer */
@@ -593,7 +692,6 @@ body {
   margin-top: 8em;
   position: relative;
 }
-
 
 .bottom-pattern-bar {
   background: #1B75BB;
