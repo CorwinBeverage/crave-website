@@ -158,42 +158,43 @@
     <h1>Let's Talk</h1>
     <p>Have a question or want to know more information? <br>Fill out the form below and we'll be in touch soon.</p>
     
-    <form class="signup-form" action="tbd" method="post">
+    <form class="signup-form" id="ajax-contact" method="post" action="mailer.php">
       
       <div class="field-wrapper">
         <label for="name">Name</label>
-        <input type="text" id="name" name="user_name">
+        <input type="text" id="name" name="name">
       </div>
       
       <div class="field-wrapper-2col">
       
         <div class="field-wrapper field-wrapper__email">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="user_email">
+          <input type="email" id="email" name="email">
         </div>
         
         <div class="field-wrapper field-wrapper__phone">
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="user_phone">
+          <input type="tel" id="phone" name="phone">
         </div>
       
     </div>
       
       <div class="field-wrapper">
         <label for="company">Company</label>
-        <input type="text" id="company" name="user_company">
+        <input type="text" id="company" name="company">
       </div>
       
       <div class="field-wrapper">
         <label for="message">Message</label>
-        <textarea type="text" id="message" name="user_message"></textarea>
+        <textarea type="text" id="message" name="message"></textarea>
       </div>
       
       <button class="blue-button" type="submit">Submit</button>
         
-      
     </form>
     
+    <div class="form-messages" id="form-messages"></div>
+
   </section>
   
 
@@ -235,6 +236,13 @@
 <script>
   AOS.init();
 </script>
+
+<!-- Ajax form scripts
+     http://blog.teamtreehouse.com/create-ajax-contact-form -->
+     
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/app.js"></script>
+
 
 <script src="http://localhost:35729/livereload.js"></script>
 </body>

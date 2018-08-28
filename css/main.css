@@ -638,6 +638,7 @@ body {
   height: 3em;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  font-variant: lining-nums;
   font-weight: 400;
   border-radius: 6px;
   border: none;
@@ -683,6 +684,27 @@ body {
   
   .field-wrapper__phone {
     
+  }
+
+}
+
+.form-messages {
+  background: white;
+  max-width: 40em;
+  border-radius: 6px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.success {
+  padding: 2em;
+}
+
+.error {
+  padding: 2em;
+  background: pink;
 }
 
 
