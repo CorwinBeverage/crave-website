@@ -23,7 +23,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "greg_davenport@corwinbevco.com";
+        $recipient = "Chris_Barnes@corwinbevco.com";
 
         // Set the email subject.
         $subject = "Crave Website Contact Form: $name";
