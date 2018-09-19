@@ -26,9 +26,53 @@ body {
 }
 
 .top-pattern-bar {
-  background: #1B75BB;
+  /* background: #1B75BB; */
+  background: linear-gradient(#2499F7, #1B75BB);
+
   overflow: hidden;
   height: 400px;
+}
+
+.top__contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em 2em 2em 2em;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 700;
+  font-variant: lining-nums;
+  color: white;
+  width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+  
+  .top__contact {
+    text-align: left;
+  }
+  
+}
+
+.top__pci-logo-wrapper {
+  display: none;
+}
+
+
+@media screen and (min-width: 550px) {
+  
+  .top__pci-logo-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    margin: 1em 2em 0 0;
+  }
+  
 }
 
 .top__logo-wrapper {
@@ -36,7 +80,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2em;
+  padding: 4em 2em 2em 2em;
 }
 
 .top-logo {
