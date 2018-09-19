@@ -20,6 +20,13 @@ body {
   overflow-x: hidden;
 }
 
+/* https://css-tricks.com/examples/hrs/ */
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
 /* Top */
 
 .top {
@@ -777,6 +784,46 @@ body {
   max-width: 250px;
 }
 
+.family-logos__wrapper {
+  font-family: 'Raleway', sans-serif;
+  font-size: .9em;
+  text-align: center;
+  font-style: normal;
+  font-variant: lining-nums;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  color: white;
+  background: black;
+  letter-spacing: .25em;
+}
+
+.family-logos {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .family-logos {
+    flex-flow: row nowrap;
+  }
+}
+
+
+.family-logos li {
+  /* outline: 1px solid green; */
+  padding: 1em;
+  max-width: 300px;
+}
+
+.family-logos a {
+  /* outline: 1px solid red; */
+}
+
 .site-footer__copyright {
   font-family: 'Raleway', sans-serif;
   font-size: .9em;
@@ -787,6 +834,7 @@ body {
   display: block;
   padding: 1em;
   color: white;
-  background: #1B75BB;  
+  background: black;  
 }
+
 
